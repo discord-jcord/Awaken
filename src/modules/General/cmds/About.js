@@ -20,7 +20,8 @@ module.exports = class About extends Command {
       .pushField({
         name: 'Links',
         value: `[Support Server](https://discord.gg/${this.client.config.links.serverCode})
-[Invite](${this.client.config.links.invite(this.client.user.id)})`,
+[Invite](${this.client.config.links.invite(this.client.user.id)})
+[Github](https://github.com/discord-jcord/jcord/)`,
         inline: true
       })
 
