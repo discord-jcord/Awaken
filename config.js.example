@@ -1,0 +1,44 @@
+module.exports = {
+  token: 'BOT TOKEN',
+  owners: ['AN ARRAY OF OWNER IDS'],
+  permissionCheck: function(msg) {
+    let permlevel = 0;
+
+    if (msg.member.permissions.has('manageMessages')) permlevel = 1;
+    if (msg.member.permissions.has('kickMembers')) permlevel = 2;
+    if (msg.member.permissions.has('banMembers')) permlevel = 3;
+    if (msg.member.permissions.has('manageGuild')) permlevel = 4;
+    if (msg.channel.guild.ownerID === msg.author.id) permlevel = 5;
+    if (this.owners.includes(msg.author.id)) permlevel = 6;
+
+    return permlevel;
+  },
+  permissions: [
+    'Member',
+    'Manage Messages',
+    'Kick Members',
+    'Ban Members',
+    'Manage Guild',
+    'Guild Owner',
+    'Bot Owner'
+  ],
+  links: {
+    serverCode: 'YOUR SUPPORT SERVER INVITE CODE',
+    invite: function(id) { return `https://discordapp.com/oauth2/authorize?client_id=${id}&permissions=8&scope=bot` }
+  },
+  guildConfig: {
+    default: {
+      disabledModules: ['AN ARRAY OF DISABLED PLUGINS, REFER TO PLUGIN.NAME'].map(elem => elem.toLowerCase()),
+      prefix: 'DEFAULT PREFIX USED BY GUILD'
+    },
+
+    greet: {
+      farewellenabled: false,
+      farewellmessage: null,
+      farewellchannel: null,
+      welcomeenabled: false,
+      welcomemessage: null,
+      welcomechannel: null
+    }
+  }
+};

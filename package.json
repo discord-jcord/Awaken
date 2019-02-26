@@ -1,0 +1,32 @@
+{
+  "name": "awaken",
+  "version": "1.0.0",
+  "description": "Awaken is a Work In Progress, Moderation ( WIP ), Utility Bot, and the official Discord Bot of the Jcord Library.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "enmap": "3.1.4",
+    "enmap-pgsql": "^2.0.0",
+    "express": "^4.16.4",
+    "jcord": "github:discord-jcord/jcord",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2",
+    "walk": "^2.3.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installdeps": "npm install --save discord-jcord/jcord body-parser chalk enmap@3.1.4 enmap-pgsql express moment moment-duration-format walk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discord-jcord/jcord.git"
+  },
+  "author": "KevvyCodes",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/discord-jcord/jcord/issues"
+  },
+  "homepage": "https://github.com/discord-jcord/jcord#readme"
+}
