@@ -24,7 +24,7 @@ Awaken is a Work In Progress, Moderation ( WIP ), Utility Bot, and the official 
   - `$ node .` or `$ node index`  
 
 ## Making Changes
-If you would check the `index.js` file, you would see that the code is obfuscated, meaning it will run but not readable. If you are willing to edit/contribute to it, kindly pm me on discord `Kevlar#0001` and agree with the License Statement i will give. Once agreed, i will send the deobfuscated file. Any illegal copy of this "software" or code will be punished.
+If you would check the `index.js` file, you would see that the code is obfuscated, meaning it will run but not readable. If you are willing to edit/contribute to it, kindly pm me on discord `Kevlar#0001` and agree with the License Statement i will give. Once agreed, i will send the deobfuscated file. Any illegal copy of the deobfuscated "software" or code will be punished.
 
 ## Need Help?
 Kindly join our [Support Server](https://discord.gg/JK8xDJQ/s)
