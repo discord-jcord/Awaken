@@ -57,4 +57,4 @@ Structure:
 - `Client._processDir` - The current directory of the `index.js` file
 
 ## Need Help?
-Kindly join our [Support Server](https://discord.gg/JK8xDJQ/s)
+Kindly join our [Support Server](https://discord.gg/JK8xDJQ/)
