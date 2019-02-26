@@ -25,6 +25,13 @@ Awaken is a Work In Progress, Moderation ( WIP ), Utility Bot, and the official 
 
 ## Making Changes
 If you would check the `index.js` file, you would see that the code is obfuscated, meaning it will run but not readable. If you are willing to edit/contribute to it, kindly pm me on discord `Kevlar#0001` and agree with the License Statement i will give. Once agreed, i will send the deobfuscated file. Any illegal copy of the deobfuscated "software" or code will be punished.
+I will post pictures in the `/licenseignore`, meaning that every user in that image contains a copy of the Deobfuscated code and can ignore the Following Conditions:  
+
+- Disclose source  
+- Same license  
+- State Changes ( You can still state changes if you want )  
+
+They can also Modify the code itself and re-upload it as their own, but will require credits from the Original Creators.
 
 ## Need Help?
 Kindly join our [Support Server](https://discord.gg/JK8xDJQ/s)
