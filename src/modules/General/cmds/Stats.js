@@ -1,5 +1,6 @@
 const { Command } = require('../../../utils/base');
 const Jcord = require('jcord');
+const os = require('os');
 const moment = require('moment');
 require('moment-duration-format');
 
@@ -14,6 +15,8 @@ module.exports = class Stats extends Command {
 
   exec(msg, args) {
     if (!args[0] || args[0] && (args[0].toLowerCase() !== 'shards' && args[0].toLowerCase() !== 'shard')) {
+      let usedMemory = process.memoryUsage().heapUsed / 1024 / 1024;
+      let totalMemory = os.totalmem() / 1024 / 1024;
       let embed = new this.client.embed()
         .makeAuthor({ name: this.client.user.tag, iconURL: this.client.user.avatarURL })
         .makeThumbnail(this.client.user.avatarURL)
@@ -27,11 +30,12 @@ module.exports = class Stats extends Command {
 **Library**: Jcord
 **Version**: v${Jcord.Version}
 **Node**: ${process.version}
-**Heap Used**: \`${(process.memoryUsage().heapUsed / 1024 / 1024 / 1024).toFixed(2)} GB ( ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB ) / ${(process.memoryUsage().heapTotal / 1024 / 1024 / 1024).toFixed(2)} GB ( ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} MB\` )
+**Heap Used**: \`${(usedMemory / 1024).toFixed(2)} GB ( ${usedMemory.toFixed(2)} MB ) / ${(totalMemory / 1024).toFixed(2)} GB ( ${totalMemory.toFixed(2)} MB\` )
 `, inline: true }) 
 
       msg.channel.send({ embed });
     } else {
+
       let embed = new this.client.embed()
         .makeAuthor({ name: this.client.user.tag, iconURL: this.client.user.avatarURL })
         .makeThumbnail(this.client.user.avatarURL)

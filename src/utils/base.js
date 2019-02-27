@@ -24,7 +24,8 @@ module.exports = {
       commands_dir = null,
       name = null,
       disabled = false,
-      desc = 'A module.'
+      desc = 'A module.',
+      canBeDisabledOnGuild = true
     }) {
       Object.defineProperty(this, 'client', { value: client });
   
@@ -32,6 +33,7 @@ module.exports = {
       this.name = name;
       this.disabled = disabled;
       this.desc = desc;
+      this.canBeDisabledOnGuild = canBeDisabledOnGuild;
     }
   }
 };

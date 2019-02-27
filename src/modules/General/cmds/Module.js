@@ -32,6 +32,11 @@ module.exports = class Modules extends Command {
 
       module = this.client._modules.get(module.toLowerCase()).module;
 
+      if (!module.canBeDisabledOnGuild)
+        return msg.channel.send({
+          content: `You can't modify the state of the **${module.name}** module.`
+        });
+
       if (!disabledModules.includes(module.name.toLowerCase()))
         return msg.channel.send({
           content: `Module: **${module.name}** already enabled!`
@@ -57,6 +62,12 @@ module.exports = class Modules extends Command {
         });
 
       module = this.client._modules.get(module.toLowerCase()).module;
+
+    if (!module.canBeDisabledOnGuild)
+      return msg.channel.send({
+        content: `You can't modify the state of the **${module.name}** module.`
+      });
+
 
       if (disabledModules.includes(module.name.toLowerCase()))
         return msg.channel.send({

@@ -21,7 +21,7 @@ module.exports = class About extends Command {
         name: 'Links',
         value: `[Support Server](https://discord.gg/${this.client.config.links.serverCode})
 [Invite](${this.client.config.links.invite(this.client.user.id)})
-[Github](https://github.com/discord-jcord/jcord/)`,
+[Github](https://github.com/discord-jcord/Awaken/)`,
         inline: true
       })
 

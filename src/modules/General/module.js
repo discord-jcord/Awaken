@@ -5,7 +5,8 @@ module.exports = class General extends Module {
     super(client, {
       commands_dir: `${__dirname}/cmds`,
       name: 'General',
-      desc: 'The default Module, can\'t be disabled, nor deleted'
+      desc: 'The default Module, can\'t be disabled, nor deleted',
+      canBeDisabledOnGuild: false
     })
   }
 
